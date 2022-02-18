@@ -89,10 +89,15 @@
   justify-content: center;
 }
 
+.gallery-container .item:hover {
+  transform: scale(102%);
+}
+
 .item {
   background-color: black;
   border-radius: 15px;
   color: white;
+  transition: 0.2s ease-in-out;
 }
 
 .images1 {
