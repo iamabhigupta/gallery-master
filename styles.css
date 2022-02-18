@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePhoto {
+  padding-top: 30px;
+}
+
+.profilePhoto img {
+  width: 156px;
+  height: 156px;
+  border-radius: 1.3rem;
+}
+
+.name {
+  font-size: 0.7rem;
+  text-align: center;
+  padding-top: 5px;
+  color: #4e5150;
+  margin-top: 6px;
+}
+
+.location {
+  font-size: 1rem;
+
+  text-align: center;
+  color: #bdbdbd;
+  margin-top: 6px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.stats {
+  width: 100px;
+  height: 65px;
+  background-color: #e5e5e5;
+  margin: 0 20px;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stats h3 {
+  margin-bottom: 5px;
+  color: #4e5150;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.stats p {
+  color: #bdbdbd;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.gallary {
+  display: flex;
+  justify-content: center;
+}
+
+.photo1 {
+  width: 30vw;
+  height: 40vh;
+  background-image: url(./images/photo1.png);
+  margin: 20px 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 285px 285px 285px;
+  grid-template-rows: 285px 285px 285px;
+  row-gap: 12px;
+  column-gap: 12px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.item {
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+}
+
+.images1 {
+  /* background-image:  */
+  background: url(./images/photo1.png);
+  background-size: cover;
+}
+
+.images2 {
+  grid-column: span 2;
+  background: url(./images/photo2.png);
+  background-size: cover;
+}
+
+.images3 {
+  grid-column: span 2;
+  background: url(./images/photo3.png);
+  background-size: cover;
+}
+
+.images4 {
+  grid-row: span 2;
+  background: url(./images/photo4.png);
+  background-size: cover;
+}
+
+.images5 {
+  background: url(./images/photo6.png);
+  background-size: cover;
+}
+
+.images6 {
+  background: url(./images/photo5.png);
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 0.7rem;
+  color: #727272;
+}
+
+span {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 900px) {
+  .gallery-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .gallery-container {
+    max-width: 900px;
+  }
+}
